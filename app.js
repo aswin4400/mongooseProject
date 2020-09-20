@@ -2,11 +2,11 @@ const express = require('express');
 
 const app = express();
 
-const postRoute = require('./posts')
+const postsRoute = require('./posts')
 //middleware
 
 //routes
-app.use('/posts',postRoute);
+app.use('/posts',postsRoute);
 app.get('/',(req,res) => {
 res.send('We are  on home');
 
